@@ -11,26 +11,8 @@
 <br>
 
 <div align="center">
-
-[![Data](https://img.shields.io/badge/Data-4d5eff?style=for-the-badge&logo=huggingface&logoColor=ffffff&labelColor)](https://huggingface.co/datasets/zwhe99/DeepMath-103K)
-[![Model](https://img.shields.io/badge/Model-4d5eff?style=for-the-badge&logo=huggingface&logoColor=ffffff&labelColor)](https://huggingface.co/collections/zwhe99/deepmath-6816e139b7f467f21a459a9a)
-[![Github](https://img.shields.io/badge/Code-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zwhe99/DeepMath)
-[![GitHub Stars](https://img.shields.io/github/stars/zwhe99/DeepMath?style=for-the-badge&logo=github&logoColor=white&label=Stars&color=000000)](https://github.com/zwhe99/DeepMath)
-[![arXiv](https://img.shields.io/badge/arXiv-2504.11456-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2504.11456)
 </div>
 </div>
-
-## 🔥 News
-- **May 8, 2025**: We found that 48 samples contained hints that revealed the answers. The relevant questions have now been revised to remove the leaked answers.
-- **April 14, 2025**: We release **`DeepMath-103K`**, a large-scale dataset featuring challenging, verifiable, and decontaminated math problems tailored for RL and SFT. We open source:
-
-## 📦 Resource
-
-- 🤗 Training data: [`DeepMath-103K`](https://huggingface.co/datasets/zwhe99/DeepMath-103K)
-- 🤗 Model weights: [`DeepMath-Zero-7B`](https://huggingface.co/zwhe99/DeepMath-Zero-7B), [`DeepMath-Zero-Math-7B`](https://huggingface.co/zwhe99/DeepMath-Zero-Math-7B), [`DeepMath-1.5B`](https://huggingface.co/zwhe99/DeepMath-1.5B),  [`DeepMath-Omn-1.5B`](https://huggingface.co/zwhe99/DeepMath-Omn-1.5B)
-- 💻 Code: [`DeepMath`](https://github.com/zwhe99/DeepMath)
-- 📝 Paper: [`arXiv:2504.11456`](https://arxiv.org/abs/2504.11456)
-
 
 ## 📖 Overview
 
@@ -73,7 +55,7 @@ The problems in DeepMath-103K are novel and unique, whereas many existing datase
 
 ## 📊Main Results
 
-DeepMath serise models achieve many **SOTA** results on challenging math benchmarks:
+DeepMath serise models achieve strong results on challenging math benchmarks:
 
 <div align="center"> <img src="./assets/github-main.png" width="100%"/>
 
@@ -85,8 +67,6 @@ DeepMath serise models achieve many **SOTA** results on challenging math benchma
 #### Environment Preparation
 
 ```shell
-git clone --recurse-submodules https://github.com/zwhe99/DeepMath.git && cd DeepMath
-
 conda create -y -n deepmath python=3.12.2 && conda activate deepmath
 pip3 install ray[default]
 pip3 install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
@@ -163,18 +143,3 @@ This work can not be done without the help of the following works:
 - **[Vivacem/MMIQC](https://huggingface.co/datasets/Vivacem/MMIQC)**: A mixture of question-response pairs extracted from Mathematics Stack Exchange pages.
 - **[TIGER-Lab/WebInstructSub](https://huggingface.co/datasets/TIGER-Lab/WebInstructSub)**: Instruction data from MathStackExchange and ScienceStackExchange.
 - **[AI-MO/NuminaMath-CoT](https://huggingface.co/datasets/AI-MO/NuminaMath-CoT)**: Approximately 860k math problems.
-
-
-
-## 📚 Citation
-```bibtex
-@article{deepmath,
-  title={DeepMath-103K: A Large-Scale, Challenging, Decontaminated, and  Verifiable Mathematical Dataset for Advancing Reasoning},
-  author={He, Zhiwei and Liang, Tian and Xu, Jiahao and Liu, Qiuzhi and Chen, Xingyu and Wang, Yue and Song, Linfeng and Yu, Dian and Liang, Zhenwen and Wang, Wenxuan and Zhang, Zhuosheng and Wang, Rui and Tu, Zhaopeng and Mi, Haitao and Yu, Dong},
-  year={2025},
-  eprint={2504.11456},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2504.11456}, 
-}
-```
