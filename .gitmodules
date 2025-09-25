@@ -1,4 +1,0 @@
-[submodule "verl"]
-	path = verl
-	url = https://github.com/zwhe99/verl.git
-	branch = deepmath
